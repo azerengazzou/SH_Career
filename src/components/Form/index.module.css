@@ -1,0 +1,9 @@
+.form {
+  @apply bg-slate-200 w-full lg:w-2/5 h-full flex flex-col items-start justify-start overflow-auto p-5 xl:p-10;
+}
+.flexedForm {
+  @apply flex items-center space-x-4;
+}
+.ticket{
+  @apply w-full pb-2;
+}

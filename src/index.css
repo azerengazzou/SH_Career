@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+  @apply bg-dark text-white;
+}
+
+::-webkit-scrollbar {
+  @apply h-1 w-1;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-orange-200;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-dark;
+}
+
+form {
+  @apply w-full flex flex-wrap;
+}

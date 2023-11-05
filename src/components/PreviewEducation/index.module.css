@@ -1,0 +1,15 @@
+.container {
+  @apply flex flex-col w-full px-6 mt-2;
+}
+
+.title {
+  @apply p-2 mb-4 mt-4 font-bold text-center tracking-widest;
+}
+
+.item {
+  @apply flex flex-col mb-4;
+}
+
+.itemHeader {
+  @apply flex flex-wrap justify-between;
+}

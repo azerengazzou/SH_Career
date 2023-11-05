@@ -1,0 +1,7 @@
+.app {
+  @apply h-auto flex flex-wrap lg:flex-nowrap overflow-hidden;
+}
+
+.print {
+  @apply w-full lg:w-3/5;
+}

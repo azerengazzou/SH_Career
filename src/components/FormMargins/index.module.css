@@ -1,0 +1,7 @@
+.container {
+  @apply w-full flex flex-wrap justify-start sm:justify-between items-center gap-x-1 bg-slate-400 hover:bg-slate-500 p-4 mb-5 rounded-lg;
+}
+
+.hint {
+  @apply w-full text-xs text-white;
+}

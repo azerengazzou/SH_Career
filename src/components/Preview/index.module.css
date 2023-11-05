@@ -1,0 +1,11 @@
+.preview {
+  @apply w-full h-full flex items-start justify-start overflow-auto p-5;
+}
+
+.leftSide {
+  @apply w-2/6 h-auto min-h-full p-6;
+}
+
+.rightSide {
+  @apply w-4/6 h-auto min-h-full;
+}
