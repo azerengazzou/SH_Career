@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Preview } from "../components";
+import { DefaultAccordion, Form, Preview } from "../components";
 import styles from "../App.module.css";
 import { useEffect, useRef } from "react";
 import { useReactToPrint } from "react-to-print";
@@ -27,9 +27,8 @@ function Builder() {
 
   return (
     <>
+    <DefaultAccordion />
     <div className={styles.app}>
-        <br/>
-        <br/>
       <div className={styles.print}>
         <style>{getPageMargins()}</style>
         <Preview ref={printRef} />

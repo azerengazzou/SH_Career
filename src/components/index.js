@@ -32,3 +32,4 @@ export { Color } from "./_Color";
 export { Language } from "./_Language";
 export { FormMargins } from "./FormMargins";
 export { Range } from "./_Range";
+export { DefaultAccordion } from "./DescriptionSection";
