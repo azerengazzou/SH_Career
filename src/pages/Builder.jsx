@@ -27,7 +27,6 @@ function Builder() {
 
   return (
     <>
-    <DefaultAccordion />
     <div className={styles.app}>
       <div className={styles.print}>
         <style>{getPageMargins()}</style>
