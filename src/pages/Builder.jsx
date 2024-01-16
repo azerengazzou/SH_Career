@@ -4,6 +4,7 @@ import styles from "../App.module.css";
 import { useEffect, useRef } from "react";
 import { useReactToPrint } from "react-to-print";
 import { useSelector } from "react-redux";
+import ReactGA from "react-ga";
 import "../index.css";
 
 function Builder() {
@@ -11,6 +12,7 @@ function Builder() {
   const { top, right, bottom, left } = useSelector(
     (state) => state.site.margins
   );
+  
 
   const printRef = useRef();
   const handlePrint = useReactToPrint({
@@ -20,6 +22,10 @@ function Builder() {
   const getPageMargins = () => {
     return `@page { margin: ${top}px ${right}px ${bottom}px ${left}px !important; }`;
   };
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
 
   useEffect(() => {
     document.documentElement.lang = language;
