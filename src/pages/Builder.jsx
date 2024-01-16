@@ -1,5 +1,5 @@
 import React from "react";
-import { DefaultAccordion, Form, Preview } from "../components";
+import { Form, Preview } from "../components";
 import styles from "../App.module.css";
 import { useEffect, useRef } from "react";
 import { useReactToPrint } from "react-to-print";

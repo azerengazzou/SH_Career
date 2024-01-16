@@ -1,33 +1,51 @@
-import React from "react";
-import Accordion from 'react-bootstrap/Accordion';
+import React, { useState } from "react";
 
-export const DefaultAccordion = () => {
-    return (
-      <Accordion defaultActiveKey="0">
-        <Accordion.Item eventKey="0">
-          <Accordion.Header>Accordion Item #1</Accordion.Header>
-          <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="1">
-          <Accordion.Header>Accordion Item #2</Accordion.Header>
-          <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </Accordion.Body>
-        </Accordion.Item>
-      </Accordion>
-    );
-}
+export const Accordion = ({ title, answer }) => {
+  const [accordionOpen, setAccordionOpen] = useState(false);
+
+  return (
+    <div className="py-2 bg-white rounded-lg p-5">
+      <button
+        onClick={() => setAccordionOpen(!accordionOpen)}
+        className="flex justify-between w-full"
+      >
+        <span>{title}</span>
+        {/* {accordionOpen ? <span>-</span> : <span>+</span>} */}
+        <svg
+          className="fill-indigo-500 shrink-0 ml-8"
+          width="16"
+          height="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            y="7"
+            width="16"
+            height="2"
+            rx="1"
+            className={`transform origin-center transition duration-200 ease-out ${
+              accordionOpen && "!rotate-180"
+            }`}
+          />
+          <rect
+            y="7"
+            width="16"
+            height="2"
+            rx="1"
+            className={`transform origin-center rotate-90 transition duration-200 ease-out ${
+              accordionOpen && "!rotate-180"
+            }`}
+          />
+        </svg>
+      </button>
+      <div
+        className={`grid overflow-hidden transition-all duration-500 ease-in-out text-slate-600 text-sm ${
+          accordionOpen
+            ? "grid-rows-[1fr] opacity-100"
+            : "grid-rows-[0fr] opacity-0"
+        }`}
+      >
+        <div className="overflow-hidden">{answer}</div>
+      </div>
+    </div>
+  );
+};

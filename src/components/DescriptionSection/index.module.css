@@ -1,15 +1,21 @@
-@tailwind components;
+.animated-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(20deg, #780060, #3333cc);
+  animation: gradientAnimation 10s linear infinite;
+}
 
-.accordion-header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px;
-    cursor: pointer;
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
   }
-  
-  .accordion-body {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-top: none;
+  50% {
+    background-position: 100% 100%;
   }
-  
+  100% {
+    background-position: 0% 0%;
+  }
+}
