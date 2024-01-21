@@ -1,8 +1,6 @@
 .app {
   @apply h-auto flex flex-wrap lg:flex-nowrap overflow-hidden;
-  border: 2px solid #000; /* Adjust the color and size according to your preference */
 }
-
 
 .print {
   @apply w-full lg:w-3/5;

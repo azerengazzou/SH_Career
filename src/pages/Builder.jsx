@@ -1,11 +1,12 @@
 import React from "react";
-import { Form, Preview } from "../components";
+import { AccordionBuilder, Form, Preview } from "../components";
 import styles from "../App.module.css";
 import { useEffect, useRef } from "react";
 import { useReactToPrint } from "react-to-print";
 import { useSelector } from "react-redux";
 import ReactGA from "react-ga";
 import "../index.css";
+import { NavList } from "../components/Common/Navbar";
 
 function Builder() {
   const { language } = useSelector((state) => state.language);
@@ -13,7 +14,6 @@ function Builder() {
     (state) => state.site.margins
   );
   
-
   const printRef = useRef();
   const handlePrint = useReactToPrint({
     content: () => printRef.current,
@@ -33,6 +33,8 @@ function Builder() {
 
   return (
     <>
+    <NavList />
+    <AccordionBuilder />
     <div className={styles.app}>
       <div className={styles.print}>
         <style>{getPageMargins()}</style>

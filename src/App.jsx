@@ -1,14 +1,13 @@
 import ReactGA from "react-ga";
-import { FAQ } from "./components";
-import Builder from "./pages/Builder";
+import { Home } from "./HomePage";
 
 const TRACKING_ID = "G-7B0TL00GDN";
 ReactGA.initialize(TRACKING_ID);
+
 function App() {
   return (
-    <div>
-      <FAQ />
-      <Builder/>
+    <div style={{ background: '#f5f5f5' }}>
+      <Home />
     </div>
   );
 }
