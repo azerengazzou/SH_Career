@@ -35,6 +35,6 @@ export { Range } from "./BuilderComponents/_Range";
 export { Accordion} from "./DescriptionSection";
 export { AccordionBuilder } from "./DescriptionSection/indexFaq";
 export { Hero } from "./DescriptionSection/welcome/hero";
-export { Home } from '../HomePage';
+export { Home } from './../pages/HomePage';
 import { ErrorPage } from "./error-page";
 import { NavList } from "./Common/Navbar";
