@@ -1,4 +1,4 @@
-import { createAction, getType } from '@reduxjs/toolkit'
+import { createAction, isActionCreator } from '@reduxjs/toolkit'
 
 describe('createAction', () => {
   it('should create an action', () => {
@@ -98,7 +98,7 @@ describe('createAction', () => {
         'A_TYPE',
         (a: string, b: string, c: string) => ({
           payload: a + b + c,
-        })
+        }),
       )
       expect(actionCreator('1', '2', '3').payload).toBe('123')
     })
@@ -122,9 +122,27 @@ describe('createAction', () => {
   })
 })
 
-describe('getType', () => {
-  it('should return the action type', () => {
-    const actionCreator = createAction('A_TYPE')
-    expect(getType(actionCreator)).toEqual('A_TYPE')
+const actionCreator = createAction('anAction')
+
+class Action {
+  type = 'totally an action'
+}
+
+describe('isActionCreator', () => {
+  it('should only return true for action creators', () => {
+    expect(isActionCreator(actionCreator)).toBe(true)
+    const notActionCreators = [
+      { type: 'an action' },
+      { type: 'more props', extra: true },
+      actionCreator(),
+      Promise.resolve({ type: 'an action' }),
+      new Action(),
+      false,
+      'a string',
+      false,
+    ]
+    for (const notActionCreator of notActionCreators) {
+      expect(isActionCreator(notActionCreator)).toBe(false)
+    }
   })
 })
