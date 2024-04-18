@@ -4,13 +4,13 @@ import store from "./stores";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Builder from "./pages/Builder";
 import { ErrorPage } from "./components/error-page";
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { Home } from "./components";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />
+    element: <Home />,
   },
   {
     path: "/error",
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/cvbuilder",
-    element: <Builder />
+    element: <Builder />,
   },
 ]);
 

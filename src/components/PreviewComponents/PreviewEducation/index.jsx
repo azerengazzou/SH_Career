@@ -1,14 +1,13 @@
-
 import { useSelector } from "react-redux";
 import { useWords } from "../../../hooks";
 import styles from "./index.module.css";
-import React from 'react';
+import React from "react";
 
 export const PreviewEducation = () => {
   const { education } = useSelector((state) => state.form);
   const { colors } = useSelector((state) => state.site);
   const words = useWords();
-  
+
   let items;
 
   if (education.length !== 0) {
@@ -23,9 +22,9 @@ export const PreviewEducation = () => {
               {item.from} - {item.to}
             </span>
           </div>
-		  <div>
-			{item.school}, {item.city}
-		  </div>
+          <div>
+            {item.school}, {item.city}
+          </div>
         </div>
       ))
     );

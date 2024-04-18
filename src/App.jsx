@@ -6,7 +6,7 @@ ReactGA.initialize(TRACKING_ID);
 
 function App() {
   return (
-    <div style={{ background: '#f5f5f5' }}>
+    <div style={{ background: "#f5f5f5" }}>
       <Home />
     </div>
   );

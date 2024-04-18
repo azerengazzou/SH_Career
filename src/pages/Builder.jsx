@@ -13,7 +13,7 @@ function Builder() {
   const { top, right, bottom, left } = useSelector(
     (state) => state.site.margins
   );
-  
+
   const printRef = useRef();
   const handlePrint = useReactToPrint({
     content: () => printRef.current,
@@ -33,15 +33,15 @@ function Builder() {
 
   return (
     <>
-    <NavList />
-    <AccordionBuilder />
-    <div className={styles.app}>
-      <div className={styles.print}>
-        <style>{getPageMargins()}</style>
-        <Preview ref={printRef} />
+      <NavList />
+      <AccordionBuilder />
+      <div className={styles.app}>
+        <div className={styles.print}>
+          <style>{getPageMargins()}</style>
+          <Preview ref={printRef} />
+        </div>
+        <Form handlePrint={handlePrint} />
       </div>
-      <Form handlePrint={handlePrint} />
-    </div>
     </>
   );
 }

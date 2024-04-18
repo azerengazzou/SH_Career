@@ -1,9 +1,8 @@
-
 import { FaTimes } from "react-icons/fa";
 import { useDispatch } from "react-redux";
 import styles from "./index.module.css";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
-import React from 'react';
+import React from "react";
 
 export const CardDetail = ({ data, setter, print }) => {
   const dispatch = useDispatch();
@@ -27,10 +26,7 @@ export const CardDetail = ({ data, setter, print }) => {
         <DragDropContext onDragEnd={handleOnDrugEnd}>
           <Droppable droppableId="details">
             {(provided) => (
-              <div
-                {...provided.droppableProps}
-                ref={provided.innerRef}
-              >
+              <div {...provided.droppableProps} ref={provided.innerRef}>
                 {React.Children.toArray(
                   data.map((item, index) => {
                     let result = "";

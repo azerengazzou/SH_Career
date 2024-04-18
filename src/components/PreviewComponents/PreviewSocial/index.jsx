@@ -1,8 +1,7 @@
-
 import { useSelector } from "react-redux";
 import { useWords } from "../../../hooks";
 import styles from "./index.module.css";
-import React from 'react';
+import React from "react";
 
 export const PreviewSocial = () => {
   const { social } = useSelector((state) => state.form);

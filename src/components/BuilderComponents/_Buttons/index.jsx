@@ -1,8 +1,7 @@
-
 import { useWords } from "../../../hooks";
 import { Button } from "../_form";
 import styles from "./index.module.css";
-import React from 'react';
+import React from "react";
 
 export const Buttons = ({
   dirty,
@@ -12,7 +11,7 @@ export const Buttons = ({
   state,
   isArray = true,
 }) => {
-const words = useWords();
+  const words = useWords();
 
   return (
     <>

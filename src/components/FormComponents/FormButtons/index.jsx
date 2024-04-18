@@ -126,7 +126,7 @@ export const FormButtons = ({ handlePrint }) => {
           degree: "Bachelor Degree",
           from: "Sep, 2016",
           to: "Jun, 2020",
-        }
+        },
       ])
     );
     dispatch(
@@ -153,7 +153,7 @@ export const FormButtons = ({ handlePrint }) => {
         },
       ])
     );
-    
+
     dispatch(
       setProjects([
         {
@@ -172,7 +172,7 @@ export const FormButtons = ({ handlePrint }) => {
         },
       ])
     );
-   
+
     dispatch(
       setCourses([
         {
@@ -327,7 +327,7 @@ export const FormButtons = ({ handlePrint }) => {
 
   return (
     <div className={styles.container}>
-      {/* Sample CV */} 
+      {/* Sample CV */}
       <Button
         onClick={uploadSample}
         variant="default"
@@ -335,8 +335,8 @@ export const FormButtons = ({ handlePrint }) => {
       >
         {words.sample}
       </Button>
-      
-      {/* Clear ALL */} 
+
+      {/* Clear ALL */}
       <Button
         onClick={clearData}
         variant="danger"
@@ -345,7 +345,7 @@ export const FormButtons = ({ handlePrint }) => {
         {words.clear_all}
       </Button>
 
-      {/* PDF Export */} 
+      {/* PDF Export */}
       <Button
         onClick={handlePrint}
         variant="success"
@@ -353,8 +353,8 @@ export const FormButtons = ({ handlePrint }) => {
       >
         {words.pdf}
       </Button>
-      
-      {/* Live Preview */} 
+
+      {/* Live Preview */}
       {/* <Button
         onClick={() => dispatch(setContentEditable(!isContentEditable))}
         variant={isContentEditable ? "success" : "danger"}
@@ -363,7 +363,7 @@ export const FormButtons = ({ handlePrint }) => {
         {words.live_edit}
       </Button> */}
 
-      {/* Export to JSON */} 
+      {/* Export to JSON */}
       <Button
         onClick={exportData}
         variant="success"
@@ -372,7 +372,7 @@ export const FormButtons = ({ handlePrint }) => {
         {words.export}
       </Button>
 
-      {/* Import JSON */} 
+      {/* Import JSON */}
       <Button
         onClick={() => {
           inputFile.current.click();
@@ -390,8 +390,6 @@ export const FormButtons = ({ handlePrint }) => {
         accept=".json"
         style={{ display: "none" }}
       />
-
-
     </div>
   );
 };

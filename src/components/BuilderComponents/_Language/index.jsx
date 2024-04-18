@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { setLanguage } from "../../../stores/language";
 import styles from "./index.module.css";
-import React from 'react';
+import React from "react";
 
 export const Language = () => {
   const dispatch = useDispatch();
@@ -14,10 +14,7 @@ export const Language = () => {
   };
 
   return (
-    <div
-      className={styles.language}
-      onClick={handleLanguage}
-    >
+    <div className={styles.language} onClick={handleLanguage}>
       <ReactCountryFlag
         countryCode={language === "en" ? "FR" : "GB"}
         style={{

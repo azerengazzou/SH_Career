@@ -28,6 +28,7 @@
     "start": "vite --port 3000 --open",
     "dev": "vite --port 3000 --open",
     "build": "vite build",
+    "prettier": "prettier . --write",
     "preview": "vite preview --port 5000 --open",
     "serve": "vite --port 3000"
   },
@@ -70,6 +71,7 @@
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
+    "prettier": "^3.2.5",
     "tailwindcss": "^3.4.3",
     "vite": "^5.2.9"
   }

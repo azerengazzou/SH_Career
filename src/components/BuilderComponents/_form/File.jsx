@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { useField } from "formik";
-import React from 'react';
+import React from "react";
 
 export default function File({ label, ...props }) {
   const [fields, meta, helpers] = useField(props);

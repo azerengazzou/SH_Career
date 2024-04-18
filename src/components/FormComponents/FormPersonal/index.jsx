@@ -1,4 +1,3 @@
-
 import { Formik, Form } from "formik";
 import { Input, Textarea, File } from "../../BuilderComponents/_form";
 import styles from "./index.module.css";
@@ -7,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setPersonal } from "../../../stores/form";
 import { Card, Buttons } from "../../";
 import { useWords } from "../../../hooks";
-import React from 'react';
+import React from "react";
 
 export const FormPersonal = () => {
   const dispatch = useDispatch();

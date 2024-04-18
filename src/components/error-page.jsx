@@ -9,8 +9,10 @@ export const ErrorPage = () => {
     <div id="error-page">
       <p>Sorry, an unexpected error has occurred.</p>
       <p>
-      <Link to={`/home`}><i>URL IS NOT VALID GO TO HOME</i></Link>
+        <Link to={`/home`}>
+          <i>URL IS NOT VALID GO TO HOME</i>
+        </Link>
       </p>
     </div>
   );
-}
+};

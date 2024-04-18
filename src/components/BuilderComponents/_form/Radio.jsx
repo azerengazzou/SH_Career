@@ -1,6 +1,6 @@
 import { useField } from "formik";
 import classNames from "classnames";
-import React from 'react';
+import React from "react";
 
 export default function Radio({ label, options, ...props }) {
   const [fields, meta, helpers] = useField(props);
@@ -32,7 +32,9 @@ export default function Radio({ label, options, ...props }) {
         ))}
       </div>
       {meta.error && (
-        <span className="mt-2 px-1 text-sm bg-red-600 text-white">{meta.error}</span>
+        <span className="mt-2 px-1 text-sm bg-red-600 text-white">
+          {meta.error}
+        </span>
       )}
     </div>
   );

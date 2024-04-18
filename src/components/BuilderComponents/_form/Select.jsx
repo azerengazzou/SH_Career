@@ -1,7 +1,7 @@
 import { useField } from "formik";
 import classNames from "classnames";
 import { useWords } from "../../../hooks";
-import React from 'react';
+import React from "react";
 
 export default function Select({ label, sizeFull = false, options, ...props }) {
   const [fields, meta, helpers] = useField(props);

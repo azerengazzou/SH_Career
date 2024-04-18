@@ -1,7 +1,7 @@
 import { useField } from "formik";
 import classNames from "classnames";
 import { FiCheck } from "react-icons/fi";
-import React from 'react';
+import React from "react";
 
 export default function Checkbox({ label, ...props }) {
   const [field, meta, helpers] = useField(props);
@@ -28,7 +28,9 @@ export default function Checkbox({ label, ...props }) {
         <span className="text-white text-base">{label}</span>
       </div>
       {meta.error && (
-        <span className="mt-2 px-1 text-sm bg-red-600 text-white">{meta.error}</span>
+        <span className="mt-2 px-1 text-sm bg-red-600 text-white">
+          {meta.error}
+        </span>
       )}
     </label>
   );

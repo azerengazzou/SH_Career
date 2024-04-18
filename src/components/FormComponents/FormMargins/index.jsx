@@ -1,8 +1,7 @@
-
 import { useWords } from "./../../../hooks";
 import { Range } from "../../BuilderComponents/_Range";
 import styles from "./index.module.css";
-import React from 'react';
+import React from "react";
 
 export const FormMargins = () => {
   const words = useWords();

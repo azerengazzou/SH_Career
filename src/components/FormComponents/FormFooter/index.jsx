@@ -1,7 +1,6 @@
-
 import { useSelector } from "react-redux";
 import styles from "./index.module.css";
-import React from 'react';
+import React from "react";
 
 export const FormFooter = () => {
   const { language } = useSelector((state) => state.language);

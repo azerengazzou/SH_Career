@@ -4,6 +4,6 @@
 .flexedForm {
   @apply flex items-center space-x-4;
 }
-.ticket{
+.ticket {
   @apply w-full pb-2;
 }

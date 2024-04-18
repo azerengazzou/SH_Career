@@ -1,13 +1,12 @@
-
 import { useSelector } from "react-redux";
 import styles from "./index.module.css";
-import React from 'react';
+import React from "react";
 
 export const PreviewHeader = () => {
   const { nameSurname, title, description } = useSelector(
     (state) => state.form.personal
   );
-  
+
   const { colors } = useSelector((state) => state.site);
 
   return (

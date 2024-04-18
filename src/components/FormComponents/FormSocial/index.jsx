@@ -7,7 +7,7 @@ import { setSocial } from "../../../stores/form";
 import { nanoid } from "nanoid";
 import { Card, CardDetail, Buttons } from "../../";
 import { useWords } from "../../../hooks";
-import React from 'react';
+import React from "react";
 
 export const FormSocial = ({ handleResetData }) => {
   const dispatch = useDispatch();

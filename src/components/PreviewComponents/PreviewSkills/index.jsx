@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { useSelector } from "react-redux";
 import { FaCircle, FaRegCircle } from "react-icons/fa";
 import styles from "./index.module.css";

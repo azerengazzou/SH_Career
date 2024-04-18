@@ -96,7 +96,8 @@ export const languageSlice = createSlice({
         titles: "Titres",
         textLeft: "Article 1",
         textRight: "Article 2",
-        color_hint: "*Double-clique sur la couleur pour revenir à la couleur par défaut",
+        color_hint:
+          "*Double-clique sur la couleur pour revenir à la couleur par défaut",
         add: "Ajouter",
         clear: "Supprimer",
         personal_information: "Informations Personnelles",

@@ -1,4 +1,3 @@
-
 import { Formik, Form } from "formik";
 import { Input, Textarea } from "../../BuilderComponents/_form";
 import styles from "./index.module.css";
@@ -8,7 +7,7 @@ import { setCourses } from "../../../stores/form";
 import { nanoid } from "nanoid";
 import { Card, CardDetail, Buttons } from "../..";
 import { useWords } from "../../../hooks";
-import React from 'react';
+import React from "react";
 
 export const FormCourses = ({ handleResetData }) => {
   const dispatch = useDispatch();

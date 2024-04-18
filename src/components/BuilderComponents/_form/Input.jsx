@@ -1,6 +1,6 @@
 import { useField } from "formik";
 import classNames from "classnames";
-import React from 'react';
+import React from "react";
 
 export default function Input({ label, sizeFull = false, ...props }) {
   const [fields, meta, helpers] = useField(props);
@@ -23,7 +23,9 @@ export default function Input({ label, sizeFull = false, ...props }) {
         {...props}
       />
       {meta.error && meta.touched && (
-        <span className="text-sm px-1 mt-1 bg-red-600 text-white">{meta.error}</span>
+        <span className="text-sm px-1 mt-1 bg-red-600 text-white">
+          {meta.error}
+        </span>
       )}
     </label>
   );

@@ -1,8 +1,7 @@
-
 import { Color } from "../../BuilderComponents/_Color";
 import { useWords } from "../../../hooks";
 import styles from "./index.module.css";
-import React from 'react';
+import React from "react";
 
 export const FormColors = () => {
   const words = useWords();
