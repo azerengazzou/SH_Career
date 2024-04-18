@@ -35,6 +35,7 @@ function Builder() {
     <>
       <NavList />
       <AccordionBuilder />
+
       <div className={styles.app}>
         <div className={styles.print}>
           <style>{getPageMargins()}</style>

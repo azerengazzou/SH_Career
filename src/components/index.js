@@ -36,5 +36,7 @@ export { Accordion } from "./DescriptionSection";
 export { AccordionBuilder } from "./DescriptionSection/indexFaq";
 export { Hero } from "./DescriptionSection/welcome/hero";
 export { Home } from "./../pages/HomePage";
+export { FeatureSection } from "./../components/DescriptionSection/welcome/homePage/components/FeatureSection";
+export { ContactSection } from "./../components/DescriptionSection/welcome/homePage/components/ContactSection";
 import { ErrorPage } from "./error-page";
 import { NavList } from "./Common/Navbar";
