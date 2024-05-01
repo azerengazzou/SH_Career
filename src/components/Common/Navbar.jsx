@@ -1,8 +1,4 @@
 import React, { useState } from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import Button from "react-bootstrap/Button";
 
 export const NavList = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -49,7 +45,7 @@ export const NavList = () => {
             </div>
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
               <div className="flex flex-shrink-0 items-center">
-                <img className="h-8 w-auto" src="public\assets\images\c-letter-logo-png-17.png" alt="CareerBuilder" />
+                <img className="h-8 w-auto" src="..\public\assets\images\c-letter-logo-png-17.png" alt="CareerBuilder" />
               </div>
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4">
