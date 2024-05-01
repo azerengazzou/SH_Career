@@ -5,7 +5,8 @@ import FeatureSection from "../components/DescriptionSection/welcome/homePage/co
 
 export const Home = () => {
   return (
-    <div>
+    <div /*style={{ background: "linear-gradient(to right, #ff7e5f, #feb47b, #33C1FF)" }}*/>
+    
       <NavList />
       <Hero />
       <FeatureSection />

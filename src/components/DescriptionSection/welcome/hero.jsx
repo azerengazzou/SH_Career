@@ -33,7 +33,7 @@ export const Hero = () => {
   });
 
   useEffect(() => {
-    const targetText = "Hello, Welcome to Career Builder!";
+    const targetText = "Join the Elite 2%: Elevate Your CV to Stand Out from the Crowd";
     let index = 0;
 
     const typingInterval = setInterval(() => {
@@ -62,11 +62,10 @@ export const Hero = () => {
                 {typedText}
               </h1>
               <p className="text-left mb-4" role="paragraph">
-                Empower your career journey with Career Builder, your go-to
-                platform for crafting professional resumes with ease. Whether
-                you're a student, a fresh graduate, or a job seeker, unleash
-                your potential and stand out to employers with personalized CVs
-                tailored to your unique skills and experiences.
+              Unlock Proven Resume Templates
+              Crafted to Match Employer Expectations
+              Effortless, Speedy, and Free Trial Available!
+              Get Started in Minutes!
               </p>
             </animated.div>
           </Col>
